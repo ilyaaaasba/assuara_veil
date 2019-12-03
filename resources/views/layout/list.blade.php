@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>yasyas books</title>
+    <title>Assuara Veil</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" style="background:#d74b35;">
       <div class="container-fluid">
         <div class="navbar-header">    
-          <a class="navbar-brand" href="#"><img src="/images/logo.png" style="width:80px; margin-top: -7px;"></a>
+          <a class="navbar-brand" href="#"><img src="/images/avb.png" style="width:80px; margin-top: -7px;"></a>
         </div>
         <div class="collapse navbar-collapse">
         <div class="nav navbar-nav navbar-right">
