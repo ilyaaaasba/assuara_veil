@@ -38,7 +38,7 @@ $.when.apply(null, promises).done(function () {
       <source src="video/milky-way-river-1280hd.mp4.mp4" type="video/mp4">
     </video>
     <div class="box">
-      <h1>Silahkan Login</h1>
+      <h1>Login</h1>
       <form action="/cek_login" method="post">
       @csrf
         <input type="text" placeholder="Username" name="username"/>

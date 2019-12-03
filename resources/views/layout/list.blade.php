@@ -70,14 +70,14 @@
       <div style="margin:50px;height:120px;">
         <center>
         <ul>
-          <li style="color:#f97b61"><h3><b>Tentang BigCatCompany</b></h3></li>
+          <li style="color:#ffffff"><h3><b>Tentang Assuara</b></h3></li>
         </ul></center>
           <hr>
         <ul>
-          <li><b>kerudung/b> adalah</li>
-          <li>Sebuah toko kerudung online</li>
-          <li>yang menyediakan semua</li>
-          <li>jenis kerudung</li>
+          <li style="color:#ffffff"><b>kerudung Assuara</b> adalah</li>
+          <li style="color:#ffffff">Sebuah toko kerudung online</li>
+          <li style="color:#ffffff">yang menyediakan semua</li>
+          <li style="color:#ffffff">jenis kerudung</li>
         </ul>
       </div>
       </div>
@@ -85,14 +85,14 @@
       <div style="margin:50px;height:120px;">
         <center>
         <ul>
-          <li style="color:#f97b61"><h3><b>Alamat Kami</b></h3></li>
+          <li style="color:#ffffff"><h3><b>Alamat Kami</b></h3></li>
         </ul></center>
           <hr>
     
           <ul>
-          <li>Jl.Universitas Jenderal Achmad Yani</li>
-          <li>Cibeber, Cimahi</li>
-          <li>Jawa Barat, Indonesia</li>
+          <li style="color:#ffffff">Universitas Pasundan Bandung</li>
+          <li style="color:#ffffff">Setiabudhi, Bandung</li>
+          <li style="color:#ffffff">Jawa Barat, Indonesia</li>
           <li></li>
         </ul>
       
@@ -122,7 +122,7 @@
       </div>
       </div>
         <div class="copyright" style="line-height:50px;">
-        <center>&copy;  Informatika 2016 </center>
+        <center>&copy;  Informatika 2017 </center>
         </div>
       </div>
   </body>
