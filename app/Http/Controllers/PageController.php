@@ -51,12 +51,25 @@ class PageController extends Controller
         $stock = stock::all();
         $users = user::where([['name', request('username')],['password',request('password')]])->first();
 
+
         if($users == null){
             return view('/login');
         }
-        else{
+        else if($users['type'] == 1){
             return view('/admin/home_login',['users' => $users,'buku' => $stock]);
         }
+        else{
+            return view('/consumen/consumen_login',['users' => $users,'buku' => $stock]);
+        }
+    }
+
+    public function admin_edit(){
+        $stok = stock::where([['id',$_POST['stock_id']]])->first();
+        $all = stock::all();
+        $users = user::where([['id',$_POST['id']]])->first();
+
+        var_dump($_POST['stok']);
+        return view('/admin/detail',['buku' => $all,'model' => $stok,'users' => $users]);
     }
 
     public function cara_pesan(){

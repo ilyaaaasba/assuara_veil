@@ -1,4 +1,4 @@
-@extends('layout/list')
+@extends('layout/customer_login')
 
 @section('container')
 

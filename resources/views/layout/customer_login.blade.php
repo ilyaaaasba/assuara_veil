@@ -56,15 +56,11 @@
             <center><b><?php echo $bukus['nama']; ?></center>
             <center><b>Harga</b> Rp.<?php echo $bukus['harga']; ?></center> 
             <center><b>Stok</b> (<?php echo $bukus['stok']; ?>)</center>
-            <center><a class="btn btn-danger" href="/detail/<?php echo $bukus['id'] ?>" role="button" style="margin-top:10px;">View details &raquo;</a></center>
-            <center> 
-                <form class="delete" method="post" action="/delete">
-                  @csrf
-                  <input type="hidden" name="users" value=<?php echo $users['id'] ?>>
-                  <input type="hidden" name="stock" value=<?php echo $bukus['id'] ?>>
-                  <input type="submit" value="Delete">
-                </form>
-            </center>
+            <form action="/detail/<?php echo $bukus['id'] ?>" method="post">
+            @csrf
+            <input type="hidden" name="id" value=<?php echo $users['id'] ?>/>
+            <center><button class="btn btn-danger" href="" type="submit" style="margin-top:10px;">View details &raquo;</button></center>
+            </form>
          </div>
         </div>
         @endforeach

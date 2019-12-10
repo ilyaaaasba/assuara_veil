@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\stock;
 use Illuminate\Http\Request;
+use App\user;
 
 
 class stock_controller extends Controller
@@ -48,8 +49,15 @@ class stock_controller extends Controller
     public function show(stock $stock)
     {
         $all = stock::all();
+        $users = user::where([['id', $_POST['id']]])->first();
+        $stock = stock::where([['id',$_POST['stock_id']]])->first();
 
-        return view('detail',['buku' => $all,'model' => $stock]);
+        if($users['type'] == 1){
+              return view('/admin/detail',['buku' => $all,'model' => $stock,'users' => $users]);
+        }
+        else{
+             return view('/consumen/detail',['buku' => $all,'model' => $stock,'users' => $users]);
+        }
     }
 
     /**
