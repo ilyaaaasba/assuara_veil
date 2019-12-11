@@ -46,7 +46,31 @@
         <center><b>Store</b></center>
     </div>
 
-    <div class="container">
+
+
+<div class="container">
+      <div class="row">
+        @foreach($buku as $bukus)
+        <div class="col-md-3" style="margin-top:20px;margin-bottom:50px">
+          <div class="buku">
+            <center><img src="/images/<?php echo $bukus['gambar'] ?>" style="margin-top:10px; width:210px;height:200px;"></center>
+            <h3 style="text-align:center; color:#f97b61;"><?php echo $bukus['judul'] ?></h3>
+            <center><b><?php echo $bukus['nama']; ?></center>
+            <center><b>Harga</b> Rp.<?php echo $bukus['harga']; ?></center> 
+            <center><b>Stok</b> (<?php echo $bukus['stok']; ?>)</center>
+            <form action="/detail" method="post">
+            @csrf
+            <input type="hidden" name="id" value=<?php echo $users['id']?>>
+            <input type="hidden" name="stock_id" value=<?php echo $bukus['id']?>>
+            <center><button class="btn btn-danger" href="" type="submit" style="margin-top:10px;">View details &raquo;</button></center>
+            </center></form>
+         </div>
+        </div>
+        @endforeach
+      </div>
+      <hr>
+    </div>
+   <!--  <div class="container">
       <div class="row">
         @foreach($buku as $bukus)
         <div class="col-md-3" style="margin-top:20px;margin-bottom:50px">
@@ -59,14 +83,14 @@
             <form action="/detail/<?php echo $bukus['id'] ?>" method="post">
             @csrf
             <input type="hidden" name="id" value=<?php echo $users['id'] ?>/>
-            <center><button class="btn btn-danger" href="" type="submit" style="margin-top:10px;">View details &raquo;</button></center>
+               <center><button class="btn btn-danger" href="" type="submit" style="margin-top:10px;">View details &raquo;</button></center>
             </form>
          </div>
         </div>
         @endforeach
       </div>
       <hr>
-    </div>
+    </div> -->
 
     <!-- fotter website ==================================================================== -->
     <div class="footer" style="width:100%;height:270px;color:#fff;background:#d74b35;">
@@ -79,7 +103,7 @@
         </ul></center>
           <hr>
         <ul>
-          <li><b>kerudung/b> adalah</li>
+          <li><b>kerudung Assuara</b> adalah</li>
           <li>Sebuah toko kerudung online</li>
           <li>yang menyediakan semua</li>
           <li>jenis kerudung</li>

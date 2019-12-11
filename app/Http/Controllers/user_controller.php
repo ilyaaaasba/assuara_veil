@@ -47,6 +47,7 @@ class user_controller extends Controller
     public function show(user $user)
     {
         //
+         return view('users.show');
     }
 
     /**
